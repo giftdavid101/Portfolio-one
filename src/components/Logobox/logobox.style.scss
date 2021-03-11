@@ -10,9 +10,12 @@
     }
   }
   &_intro-text{
-    font-size: 80px;
-    display: flex;
-    flex-direction: column;
+
+    font-size: 30px;
+   padding: 20px 15px;
+
+
+
 
    &_touch{
 
@@ -32,4 +35,11 @@
    }
   }
 
+}
+.technologies{
+  font-size: 60px;
+  padding: 40px;
+}
+.space{
+margin:0 10px;
 }

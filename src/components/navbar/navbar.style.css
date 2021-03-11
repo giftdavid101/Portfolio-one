@@ -5,5 +5,8 @@
   display: flex;
   justify-content: space-between;
 }
+.navbar nav a {
+  color: white;
+}
 
 /*# sourceMappingURL=navbar.style.css.map */

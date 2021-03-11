@@ -9,9 +9,8 @@
   font-family: "Mr Dafoe", cursive;
 }
 .logo-box_intro-text {
-  font-size: 80px;
-  display: flex;
-  flex-direction: column;
+  font-size: 30px;
+  padding: 20px 15px;
 }
 .logo-box_intro-text_touch {
   width: 150px;
@@ -24,6 +23,15 @@
 }
 .logo-box_intro-text_touch a {
   color: white;
+}
+
+.technologies {
+  font-size: 60px;
+  padding: 40px;
+}
+
+.space {
+  margin: 0 10px;
 }
 
 /*# sourceMappingURL=logobox.style.css.map */
