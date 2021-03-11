@@ -1,0 +1,29 @@
+.logo-box {
+  width: 50%;
+  height: 100vh;
+}
+.logo-box header .logo {
+  height: 60px;
+  font-size: 30px;
+  margin: 0 0 0 15px;
+  font-family: "Mr Dafoe", cursive;
+}
+.logo-box_intro-text {
+  font-size: 80px;
+  display: flex;
+  flex-direction: column;
+}
+.logo-box_intro-text_touch {
+  width: 150px;
+  font-size: 20px;
+  background: black;
+  border-radius: 40px;
+  text-align: center;
+  margin: 15px 0 0 0;
+  padding: 5px;
+}
+.logo-box_intro-text_touch a {
+  color: white;
+}
+
+/*# sourceMappingURL=logobox.style.css.map */

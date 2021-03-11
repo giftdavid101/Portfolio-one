@@ -1,0 +1,9 @@
+.navbar {
+  width: 100%;
+}
+.navbar nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=navbar.style.css.map */
