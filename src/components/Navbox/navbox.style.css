@@ -12,4 +12,10 @@
   align-items: center;
 }
 
+@media screen and (max-width: 900px) {
+  .navbox {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=navbox.style.css.map */

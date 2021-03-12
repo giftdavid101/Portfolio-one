@@ -9,6 +9,7 @@ const NavBox = () => {
             backgroundImage:`url(${Code})`
         }}>
         <NavBar/>
+
         </div>
     );
 };

@@ -15,18 +15,19 @@ const LogoBox = () => {
                <div className={'logo'}>Gift David</div>
            </header>
 
-            <div className={'logo-box_intro-text'}>
-                <div>
+            <div className={'logo-box_lb-content'}>
+                <div className={'logo-box_lb-content_intro-text'}>
                     <animated.span style={props}>  <h1>I am a Front-End Developer.</h1></animated.span>
                     <Typical
-                        steps={['Hello!', 1000, 'Let me bring your', 500 ,'designs to live with', 500]}
+                        steps={['Hello!', 1000, 'Hello Let me bring your', 500 ,'Hello Let me bring your Designs', 500]}
                         loop={Infinity}
                         wrapper="p"
+                        size='200'
                     />
 
-                        modern technologies.
+                     to live with modern technologies.
                 </div>
-                <div className={'technologies'}>
+                <div className={'logo-box_lb-content_technologies'}>
                     <span className={'space'}><AiOutlineHtml5/></span>
                     <span className={'space'}> <DiCss3/></span>
                     <span className={'space'}><IoLogoJavascript/></span>

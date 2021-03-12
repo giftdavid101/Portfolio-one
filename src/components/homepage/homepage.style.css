@@ -1,7 +1,29 @@
 .homepage {
   width: 100%;
   height: 100vh;
+}
+.homepage_hc {
   display: flex;
+}
+.homepage_home-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .homepage {
+    width: 100%;
+    color: green;
+  }
+  .homepage_hc {
+    display: none;
+  }
+  .homepage_home-mobile {
+    display: block;
+    width: 100%;
+  }
+  .homepage .hm {
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=homepage.style.css.map */
