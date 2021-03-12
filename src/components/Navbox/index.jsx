@@ -1,7 +1,7 @@
 import React from 'react';
 import './navbox.style.css';
 import NavBar from "../navbar";
-import Code from '../../img/code2.jpg'
+import Code from '../../img/code.jpg'
 
 const NavBox = () => {
     return (
