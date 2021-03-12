@@ -16,11 +16,9 @@ const NavBar = () => {
                    Works
                 </Link>
                 <Link to={'/contact'}>
-                    chat
+                    Contact
                 </Link>
-                <Link to={'/blog'}>
-                    Blog
-                </Link>
+
             </nav>
         </div>
     );
