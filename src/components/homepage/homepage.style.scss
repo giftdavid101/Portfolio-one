@@ -1,6 +1,35 @@
 .homepage{
   width: 100%;
   height: 100vh;
-  display: flex;
 
+  &_hc{
+    display: flex;
+  }
+  &_home-mobile{
+     display: none;
+  }
+
+}
+@media screen and (max-width:900px){
+.homepage{
+  width:100%;
+  //background: yellow;
+  color: green;
+  &_hc{
+  //display: flex;
+  //  flex-direction: column-reverse;
+    display: none;
+  }
+  &_home-mobile{
+    display: block;
+    width: 100%;
+
+
+  }
+  .hm{
+
+    display: flex;
+  }
+
+}
 }

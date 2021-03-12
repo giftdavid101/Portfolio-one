@@ -9,10 +9,13 @@
       font-family: 'Mr Dafoe', cursive;
     }
   }
-  &_intro-text{
-    font-size: 80px;
-    display: flex;
-    flex-direction: column;
+  &_lb-content{
+
+    font-size: 30px;
+   padding: 20px 15px;
+
+
+
 
    &_touch{
 
@@ -30,6 +33,38 @@
 
      }
    }
+    &_technologies{
+      font-size: 60px;
+      padding: 40px;
+    }
   }
 
+}
+
+.space{
+margin:0 10px;
+}
+@media screen and (max-width: 900px){
+  .logo-box{
+    width:100%;
+    header{
+      .logo{
+        height: 60px;
+        font-size: 30px;
+        margin: 0 0 0 15px;
+        font-family: 'Mr Dafoe', cursive;
+      }
+    }
+    &_lb-content{
+     &_intro-text{
+       h1{
+         font-size: 100px;
+       }
+     }
+      &_technologies{
+        font-size: 80px;
+        padding: 40px;
+      }
+    }
+  }
 }

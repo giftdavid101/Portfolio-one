@@ -7,9 +7,18 @@ import NavBox from "../Navbox";
 const HomePage = () => {
     return (
         <div className={'homepage'}>
-             <SideBar/>
-             <LogoBox/>
-             <NavBox/>
+
+            <div className={'homepage_hc'}>
+                <SideBar/>
+                <LogoBox/>
+                <NavBox/>
+            </div>
+
+
+             <div className={'homepage_home-mobile hm'}>
+                 <SideBar/>
+                 <LogoBox/>
+             </div>
         </div>
     );
 };

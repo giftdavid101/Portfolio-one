@@ -2,8 +2,13 @@
   width: 100%;
 }
 .navbar nav {
+  height: 60px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.navbar nav a {
+  color: white;
 }
 
 /*# sourceMappingURL=navbar.style.css.map */

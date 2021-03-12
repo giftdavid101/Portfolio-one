@@ -8,12 +8,11 @@
   margin: 0 0 0 15px;
   font-family: "Mr Dafoe", cursive;
 }
-.logo-box_intro-text {
-  font-size: 80px;
-  display: flex;
-  flex-direction: column;
+.logo-box_lb-content {
+  font-size: 30px;
+  padding: 20px 15px;
 }
-.logo-box_intro-text_touch {
+.logo-box_lb-content_touch {
   width: 150px;
   font-size: 20px;
   background: black;
@@ -22,8 +21,35 @@
   margin: 15px 0 0 0;
   padding: 5px;
 }
-.logo-box_intro-text_touch a {
+.logo-box_lb-content_touch a {
   color: white;
+}
+.logo-box_lb-content_technologies {
+  font-size: 60px;
+  padding: 40px;
+}
+
+.space {
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .logo-box {
+    width: 100%;
+  }
+  .logo-box header .logo {
+    height: 60px;
+    font-size: 30px;
+    margin: 0 0 0 15px;
+    font-family: "Mr Dafoe", cursive;
+  }
+  .logo-box_lb-content_intro-text h1 {
+    font-size: 100px;
+  }
+  .logo-box_lb-content_technologies {
+    font-size: 80px;
+    padding: 40px;
+  }
 }
 
 /*# sourceMappingURL=logobox.style.css.map */
