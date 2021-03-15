@@ -47,8 +47,46 @@
     font-size: 100px;
   }
   .logo-box_lb-content_technologies {
-    font-size: 60px;
+    font-size: 50px;
     padding: 40px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .logo-box {
+    width: 100%;
+  }
+  .logo-box header .logo {
+    height: 60px;
+    font-size: 30px;
+    margin: 0 0 0 15px;
+    font-family: "Mr Dafoe", cursive;
+  }
+  .logo-box_lb-content_intro-text h1 {
+    font-size: 55px;
+    padding: 20px 0;
+  }
+  .logo-box_lb-content_technologies {
+    font-size: 24px;
+    padding: 16px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .logo-box {
+    width: 100%;
+  }
+  .logo-box header .logo {
+    height: 60px;
+    font-size: 30px;
+    margin: 0 0 0 15px;
+    font-family: "Mr Dafoe", cursive;
+  }
+  .logo-box_lb-content_intro-text h1 {
+    font-size: 55px;
+    padding: 20px 0;
+  }
+  .logo-box_lb-content_technologies {
+    font-size: 24px;
+    padding: 16px;
   }
 }
 

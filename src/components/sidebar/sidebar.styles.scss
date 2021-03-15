@@ -39,4 +39,14 @@
     }
   }
 }
+}@media screen and (max-width: 500px){
+.sidebar{
+  width:60px;
+  &_sb{
+    &_menubar{
+      display: block;
+    }
+  }
 }
+}
+
