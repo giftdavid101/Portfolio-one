@@ -61,8 +61,8 @@ const About = () => {
                                    <img src={el.imageUrl} alt={'foto'}/>
                                    <h2>{el.name}</h2>
                                </div>
-                               <div>
-                                   {el.content}
+                               <div style={{textAlign:'justify'}}>
+                                  <span>{el.content}</span>
                                </div>
                            </div>
 
