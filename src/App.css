@@ -1,5 +1,5 @@
 *{
-    outline:1px dashed grey;
+    /*outline:1px dashed grey;*/
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -14,14 +14,19 @@
     height: 10vh;
     background:  black;
 }
+
 a{
     text-decoration: none;
     color: yellow;
 }
 .container{
-    width:100%;
+    width:90%;
     max-width: 1280px;
     margin: auto;
+    /*padding: 0 20px;*/
+}
+.hp-sb{
+    display: flex;
 }
 .rc{
     width:100%;
@@ -36,4 +41,16 @@ color: black;
     display: flex;
     align-items: center;
     font-family: 'Mr Dafoe', cursive;
+}
+
+@media screen and (max-width: 950px){
+    .rc{
+        display: flex;
+        justify-content: center;
+
+    }
+    .rcl{
+        display: flex;
+        justify-content: center;
+    }
 }

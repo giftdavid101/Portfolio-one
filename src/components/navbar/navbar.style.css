@@ -11,4 +11,10 @@
   color: gold;
 }
 
+@media screen and (max-width: 950px) {
+  .navbar {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=navbar.style.css.map */

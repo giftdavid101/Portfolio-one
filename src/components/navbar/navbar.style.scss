@@ -1,5 +1,6 @@
 .navbar{
   width:100%;
+
   nav{
     height: 60px;
     display: flex;
@@ -10,4 +11,8 @@
     }
   }
 }
-
+@media screen and (max-width: 950px){
+.navbar{
+  display: none;
+}
+}

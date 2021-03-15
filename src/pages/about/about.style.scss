@@ -1,9 +1,13 @@
 .about{
   width: 100%;
   font-family: 'Roboto Mono', monospace;
-
+&_au-mobile{
+  display: none;
+}
 &_au{
   margin: 50px 0;
+
+
  &_items{
    display: flex;
    justify-content: space-evenly;
@@ -54,4 +58,24 @@
 }
 .sc-one{
   margin:50px 0
+}
+@media screen and (max-width: 950px){
+
+  .about{
+
+    width: 100%;
+    &_au{
+      margin: 30px 0;
+      &_au-text{
+        p{
+          text-align: justify;
+        }
+      }
+
+      &_items{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
 }
