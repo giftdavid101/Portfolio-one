@@ -1,5 +1,6 @@
 .about{
   width: 100%;
+  text-align: justify;
   font-family: 'Roboto Mono', monospace;
 &_au-mobile{
   display: none;
@@ -76,9 +77,9 @@ display: flex;
     &_au{
       margin: 30px 0;
       &_au-text{
-        p{
-          text-align: justify;
-        }
+        //p{
+        //  //text-align: justify;
+        //}
       }
 
       &_items{

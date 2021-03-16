@@ -1,5 +1,6 @@
 .about {
   width: 100%;
+  text-align: justify;
   font-family: "Roboto Mono", monospace;
 }
 .about_au-mobile {
@@ -74,9 +75,6 @@
   }
   .about_au {
     margin: 30px 0;
-  }
-  .about_au_au-text p {
-    text-align: justify;
   }
   .about_au_items {
     display: flex;

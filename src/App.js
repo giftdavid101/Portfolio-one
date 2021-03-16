@@ -14,12 +14,10 @@ function App() {
             <Route exact path="/" component={HomePage} />
 
             <div>
-
                     <div  className={'rc container'} >
                         <div className={'logo rcl'}>Gift David</div>
                         <NavBar/>
                     </div>
-
                 <Route exact path={"/about"} component={About}/>
                 <Route exact path={"/works"} component={Works}/>
             </div>

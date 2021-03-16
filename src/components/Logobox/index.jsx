@@ -35,6 +35,17 @@ const LogoBox = () => {
                     <span className={'space'}> <IoLogoNodejs/> </span>
 
                 </div>
+                <div style={{ width:'100%', display:'flex',justifyContent:'space-around'
+                }}>
+                    <div>{''}</div>
+                    <div>{''}</div>
+                    <div style={{textAlign:'right',marginRight:'0',
+                        padding:'20px',
+                       color:'white',border:'1px solid black',  background:'black'}}>
+                      Hire Me
+                    </div>
+                </div>
+
 
 
             </div>
