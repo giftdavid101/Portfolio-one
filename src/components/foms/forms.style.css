@@ -1,0 +1,18 @@
+.forms input {
+  width: 100%;
+  padding: 10px;
+}
+.forms .form-div {
+  margin: 30px 0;
+}
+.forms .text-area {
+  padding: 40px;
+}
+.forms .form-button {
+  padding: 10px;
+  border-radius: 5px;
+  background: black;
+  color: #f1f1f1;
+}
+
+/*# sourceMappingURL=forms.style.css.map */

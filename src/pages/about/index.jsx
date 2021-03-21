@@ -1,7 +1,7 @@
 import React from 'react';
 import './about.style.css';
 import SideBar from "../../components/sidebar";
-import Footer from "../../components/homepage/footer";
+import Footer from "../../components/footer";
 
 
 
@@ -58,7 +58,7 @@ const About = () => {
                        {data.map((el) => (
                            <div className={'card'} key={el.id}>
                                <div className={'emage'}>
-                                   <img src={el.imageUrl} alt={'foto'}/>
+                                   <img className={'foto'} src={el.imageUrl} alt={'foto'}/>
                                    <h2>{el.name}</h2>
                                </div>
                                <div style={{textAlign:'justify'}}>

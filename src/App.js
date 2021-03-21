@@ -6,6 +6,7 @@ import About from "./pages/about";
 import NavBar from "./components/navbar";
 import Works from "./pages/works";
 import {PortfolioData} from "./pages/works/portfoliodata";
+import Contact from "./pages/contact";
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
                         <NavBar/>
                     </div>
                 <Route exact path={"/about"} component={About}/>
+
                 {/*<Route exact path={"/works"} slides={PortfolioData} component={Works}/>*/}
                 <Route
                     path='/works'
@@ -29,6 +31,7 @@ function App() {
                         <Works {...props} slides={PortfolioData} />
                     )}
                 />
+                <Route exact path={"/contact"} component={Contact}/>
             </div>
 
 

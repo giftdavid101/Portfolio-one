@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './works.style.css'
 import {PortfolioData} from "./portfoliodata";
-import Footer from "../../components/homepage/footer";
+import Footer from "../../components/footer";
 
 
 const Works = ({slides}) => {
@@ -36,7 +36,7 @@ const Works = ({slides}) => {
                                     index === current && (
                                         <div className={'projects'}>
                                             <div className={'projects_emage'}>
-                                                <img src={el.emage} alt='project image' className='image'/>
+                                                <img className={'works-emage'} src={el.emage} alt='project image' className='image'/>
                                             </div>
                                             <div className={'details'}>
                                                <a target="_blank" className={'project-links'} href={el.link}><h1>{el.name}</h1></a>

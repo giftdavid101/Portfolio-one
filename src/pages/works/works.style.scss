@@ -18,7 +18,7 @@
   background-position: center;
   background-size: cover;
 
-}img{
+}works-emage{
    width: 1000px;
   height: 500px;
    //height: 100%;
@@ -50,6 +50,8 @@
 .el.active {
   transition-duration: 4s;
   transform: scale(0.9);
+  //transition: transform 2s cubic-bezier(.23,1,.32,1)
+  //,opacity 1.5s ease-out;
 }
 @media screen and (max-width: 950px){
   .project-links{
