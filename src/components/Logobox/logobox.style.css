@@ -35,7 +35,12 @@
 
 @media screen and (max-width: 900px) {
   .logo-box {
-    width: 100%;
+    width: 90%;
+  }
+  .logo-box header .l-m {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .logo-box header .logo {
     height: 60px;
@@ -53,7 +58,7 @@
 }
 @media screen and (max-width: 500px) {
   .logo-box {
-    width: 100%;
+    width: 90%;
   }
   .logo-box header .logo {
     height: 60px;
@@ -62,7 +67,7 @@
     font-family: "Mr Dafoe", cursive;
   }
   .logo-box_lb-content_intro-text h1 {
-    font-size: 55px;
+    font-size: 40px;
     padding: 20px 0;
   }
   .logo-box_lb-content_technologies {
@@ -72,7 +77,7 @@
 }
 @media screen and (max-width: 350px) {
   .logo-box {
-    width: 100%;
+    width: 80%;
   }
   .logo-box header .logo {
     height: 60px;

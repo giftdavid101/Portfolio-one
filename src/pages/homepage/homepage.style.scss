@@ -14,7 +14,7 @@
 .homepage{
   width:100%;
   //background: yellow;
-  color: green;
+  color: #307c0d;
   &_hc{
   //display: flex;
   //  flex-direction: column-reverse;
@@ -23,12 +23,11 @@
   &_home-mobile{
     display: block;
     width: 100%;
-
-
   }
   .hm{
-
+   width: 100%;
     display: flex;
+
   }
 
 }

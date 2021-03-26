@@ -9,6 +9,9 @@
     font-family: 'Roboto Mono', monospace;
 
 }
+.black{
+    color: black;
+}
 .line{
     width: 5px;
     height: 10vh;
@@ -32,9 +35,14 @@ a{
     width:100%;
     display: flex;
 
-}
-.rcl{
-color: black;
+
+
+}.rc-mobile{
+     display: none;
+ }
+
+.rcl {
+    color: black;
     width: 70%;
     font-size: 30px;
     margin: 0 0 0 15px;
@@ -45,10 +53,24 @@ color: black;
 
 @media screen and (max-width: 950px){
     .rc{
+        display: none;
+    }
+    .rc-mobile{
+        display: block;
+    }
+
+    .rcl{
         display: flex;
         justify-content: center;
-
     }
+}@media screen and (max-width: 450px){
+    .rc{
+        display: none;
+    }
+    .rc-mobile{
+        display: block;
+    }
+
     .rcl{
         display: flex;
         justify-content: center;

@@ -12,7 +12,7 @@
 @media screen and (max-width: 900px) {
   .homepage {
     width: 100%;
-    color: green;
+    color: #307c0d;
   }
   .homepage_hc {
     display: none;
@@ -22,6 +22,7 @@
     width: 100%;
   }
   .homepage .hm {
+    width: 100%;
     display: flex;
   }
 }

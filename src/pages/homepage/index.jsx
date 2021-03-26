@@ -1,8 +1,8 @@
 import React from 'react';
 import './homepage.style.css'
-import SideBar from "../sidebar";
-import LogoBox from "../Logobox";
-import NavBox from "../Navbox";
+import SideBar from "../../components/sidebar";
+import LogoBox from "../../components/Logobox";
+import NavBox from "../../components/Navbox";
 
 const HomePage = () => {
     return (

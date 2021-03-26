@@ -1,13 +1,11 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './footer.style.css'
-import {AiFillGithub, AiFillLinkedin, AiFillTwitterCircle, HiMenuAlt1} from "react-icons/all";
-import NavBar from "../navbar";
+import {AiFillGithub, AiFillLinkedin, AiFillTwitterCircle} from "react-icons/all";
+import Menu from "../../elements/menu";
 
-const Footer = () => {
-    const [state, setState] = useState(false);
-    const displayMenu = () => {
-        console.log('clicked')
-    }
+
+const Footer = ({handleClick, click}) => {
+
     return (
         <div className={'footer container'}>
             <div className={'footer_f-content container'}>
@@ -26,20 +24,10 @@ const Footer = () => {
 
                 </div>
 
-                <div className={'footer_f-content_f-media_menu'}>
-                    <div style={{
-                        width: '100px',
-                        background: 'black',
-                        borderRadius: '50px',
-                        color: 'white',
-                        textAlign: 'center',
-                        fontSize: '23px',
-                        margin: '0 10px',
-                        padding: '4px'
-                    }}>
-                        Menu
-                    </div>
-
+                <div className={'footer_f-content_f-media_menu'} onClick={handleClick}>
+                    {
+                        click ?  <Menu/> : <Menu/>
+                    }
                 </div>
             </div>
             </div>

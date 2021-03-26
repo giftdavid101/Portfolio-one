@@ -2,9 +2,19 @@ import React, {useState} from 'react';
 import './works.style.css'
 import {PortfolioData} from "./portfoliodata";
 import Footer from "../../components/footer";
+import {FaArrowAltCircleLeft, FaArrowAltCircleRight} from 'react-icons/all'
+import NavBar from "../../components/navbar";
 
 
 const Works = ({slides}) => {
+    const [click , setClick] = useState(false)
+
+    const handleClick = () => {
+        setClick(!click)
+    }
+    const closeMobile = () => {
+        setClick(true)
+    }
 
     const [current, setCurrent] = useState(0);
     const length = slides.length;
@@ -23,10 +33,14 @@ const Works = ({slides}) => {
     }
     return (
         <div className={'works container'}>
-            <div className={'works_w-content'}>
+            <div onClick={closeMobile}>
+                { click ?  <NavBar/> : null}
+            </div>
+            <div className={'works_w-content container'}>
                 <div className={'works_w-content_works-pics'}>
                     <div onClick={moveNext} className={'works_w-content_works-pics_np-icons'}>
-                        <div>  &#x3C;Prev&#x3E;</div>
+                        <div className={'code-arrow'}>  &#x3C;Prev&#x3E;</div>
+                        <div className={'r-arrow'}><FaArrowAltCircleLeft/></div>
                     </div>
 
                     {
@@ -36,22 +50,23 @@ const Works = ({slides}) => {
                                     index === current && (
                                         <div className={'projects'}>
                                             <div className={'projects_emage'}>
-                                                <img className={'works-emage'} src={el.emage} alt='project image' className='image'/>
+                                                <img className={'projects_emage_w-emage'} src={el.emage} alt='project emage'/>
                                             </div>
                                             <div className={'details'}>
-                                               <a target="_blank" className={'project-links'} href={el.link}><h1>{el.name}</h1></a>
+                                               <a target={"_blank"} rel="noreferrer" className={'project-links'} href={el.link}><h1>{el.name}</h1></a>
                                                 Tools: <span>{el.tools}</span>
 
                                                 <div className={'description'}>
                                                     <h3>Description</h3>
                                                     <span>
-                                                        s simply dummy text of the printing and typesetting industry.
+                                                        A simply dummy text of the printing and typesetting industry.
                                                         Lorem Ipsum has been the industry's standard dummy text ever
                                                         since the 1500s, when an unknown
                                                         printer took a galley of type and scrambled
                                                         it to make a type specimen bo
                                                     </span>
                                                 </div>
+                                                <span> Note: <i style={{color:'grey', fontSize:'15px'}}>{el.details}</i></span>
                                             </div>
                                         </div>
 
@@ -63,10 +78,11 @@ const Works = ({slides}) => {
                     }
 
                     <div onClick={movePrev} className={'works_w-content_works-pics_np-icons'}>
-                        <div>  &#x3C;&#8725;Next&#x3E;</div>
+                        <div className={'code-arrow'}>  &#x3C;&#8725;Next&#x3E;</div>
+                        <div className={'r-arrow'}><FaArrowAltCircleRight/></div>
                     </div>
                 </div>
-                <Footer/>
+                <Footer click={click} handleClick={handleClick}/>
             </div>
         </div>
     );

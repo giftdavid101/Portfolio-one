@@ -46,8 +46,14 @@ margin:0 10px;
 }
 @media screen and (max-width: 900px){
   .logo-box{
-    width:100%;
+    width:90%;
     header{
+      .l-m{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
       .logo{
         height: 60px;
         font-size: 30px;
@@ -71,7 +77,7 @@ margin:0 10px;
 
 @media screen and (max-width:500px ){
   .logo-box{
-    width:100%;
+    width:90%;
     header{
       .logo{
         height: 60px;
@@ -83,7 +89,7 @@ margin:0 10px;
     &_lb-content{
       &_intro-text{
         h1{
-          font-size: 55px;
+          font-size: 40px;
           padding: 20px 0;
         }
       }
@@ -95,7 +101,7 @@ margin:0 10px;
   }
 }@media screen and (max-width:350px ){
   .logo-box{
-    width:100%;
+    width:80%;
     header{
       .logo{
         height: 60px;

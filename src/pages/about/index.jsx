@@ -1,7 +1,7 @@
-import React from 'react';
+import React,{useState}from 'react';
 import './about.style.css';
-import SideBar from "../../components/sidebar";
 import Footer from "../../components/footer";
+import NavBar from "../../components/navbar";
 
 
 
@@ -35,9 +35,22 @@ const data = [
 ]
 
 const About = () => {
+    const [click , setClick] = useState(false)
+
+    const handleClick = () => {
+        setClick(!click)
+    }
+    const closeMobile = () => {
+        setClick(true)
+    }
     return (
         <div className={'about container'}>
-           <div className={'about_au'}>
+            <div onClick={closeMobile}>
+                { click ?  <NavBar/> : null}
+            </div>
+
+
+            <div className={'about_au'}>
 
                <>
                    <div className={'about_au_au-text'}>
@@ -48,7 +61,7 @@ const About = () => {
                            your business for clients and partners. I use pure Html, Css,
                            Javascript and React Js.
                            I prefer to work as a freelancer(self-employed) and also do not mind working
-                           in an office.
+                           with your team.
                        </p>
                    </div>
 
@@ -114,7 +127,7 @@ const About = () => {
 
 
            </div>
-            <Footer/>
+            <Footer click={click} handleClick={handleClick}/>
 
         </div>
     );

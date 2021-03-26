@@ -14,5 +14,14 @@
   background: black;
   color: #f1f1f1;
 }
+.forms .contact-details {
+  margin: 30px 0;
+}
+.forms .media {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+}
 
 /*# sourceMappingURL=forms.style.css.map */
